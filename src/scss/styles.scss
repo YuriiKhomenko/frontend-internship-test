@@ -11,11 +11,11 @@
   position: fixed;
   display: none;
   width: 233px;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
   padding-bottom: 35px;
   top: 316px;
-  left: 588px;
+  left: 42%;
   border-radius: 2%;
 }
 
@@ -59,6 +59,7 @@
 
 .popup__check {
   display: flex;
+  position: relative;
   align-items: center;
   padding-left: 16px;
   margin-bottom: 25px;
@@ -79,6 +80,22 @@
   border: 1px solid #000000;
 }
 
+.popup__label {
+  cursor: pointer;
+}
+
+.popup__checkbox:checked + .popup__label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 15px;
+  top: 3px;
+  left: 17px;
+  background-image: url(/img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .popup__submit {
   cursor: pointer;
   display: block;
@@ -90,4 +107,13 @@
   width: 205px;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  &:hover {
+    background-color: #fd878e;
+  }
+}
+
+.success-msg {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
 }
