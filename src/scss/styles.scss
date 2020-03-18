@@ -1,2 +1,93 @@
 // Here goes your CSS
 @import 'layout/main';
+
+.btn-main:focus {
+  outline: auto;
+  outline-color: blueviolet;
+}
+
+.popup {
+  background-color: #ffffff;
+  position: fixed;
+  display: none;
+  width: 233px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 35px;
+  top: 316px;
+  left: 588px;
+  border-radius: 2%;
+}
+
+.popup-show {
+  display: block;
+}
+
+.popup__close {
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  border: none;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-image: url('/img/cross.svg');
+  cursor: pointer;
+}
+
+.popup__heading {
+  font-family: 'Lobster', Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.popup__inputs {
+  display: flex;
+  flex-direction: column;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.popup__input {
+  border: 1px solid #000000;
+  padding: 14px;
+  padding-left: 23px;
+  margin-bottom: 15px;
+}
+
+.popup__check {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.popup__checkbox {
+  position: relative;
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #cfcfcf;
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.popup__submit {
+  cursor: pointer;
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  margin: 0 auto;
+  width: 205px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
